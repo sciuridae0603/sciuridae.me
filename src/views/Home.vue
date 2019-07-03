@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="Home">
     <div id="avatar">
       <img id="avatarImg" src="//gravatar.com/avatar/60ce6b00bae88e0ff15c9480a9ce92f5?s=500" />
       <div id="avatarBorder" />
@@ -7,25 +7,25 @@
     <div id="name">Sciuridae Li</div>
     <div id="description">只是一個普通人，常常玩弄軟體及硬體</div>
 
-    <Skills v-bind:skills="data.skills" />
+    <Group v-bind:group="data.skills" />
   </div>
 </template>
 
 <script>
-import Skills from "@/components/Skills.vue";
+import Group from "@/components/Group.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   props: {
     data: Object
   },
   components: {
-    Skills
+    Group
   }
 };
 </script>
 <style>
-.home {
+.Home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,7 @@ export default {
 #description {
   color: white;
   font-size: 16px;
+  margin-bottom: 10em;
 }
 #avatar {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);

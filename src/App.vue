@@ -20,14 +20,142 @@ export default {
   data() {
     return {
       data: {
-        skills: [
-          {
-            name: "Python",
-            percent: 80,
-            description: "經常使用的程式語言",
-            icon: "fab fa-python"
-          }
-        ]
+        contact: {
+          title: "Contact 聯絡我",
+          icon: "address-book",
+          items: [
+            {
+              name: "Telegram",
+              href: "https://t.me/Sciuridae",
+              icon: ["fab", "telegram"]
+            },
+            {
+              name: "Mail",
+              href: "mailto:sciuridae0603@gmail.com",
+              icon: ["fas", "envelope"]
+            },
+            {
+              name: "Facebook",
+              href: "https://fb.me/sciuridae.li",
+              icon: ["fab", "facebook"]
+            },
+            {
+              name: "GitHub",
+              href: "https://github.com/Sciuridae0603",
+              icon: ["fab", "github"]
+            },
+            {
+              name: "Steam",
+              href: "https://steamcommunity.com/id/Sciuridae_/",
+              icon: ["fab", "steam"]
+            },
+            {
+              name: "Twitter",
+              href: "http://twitter.com/Sciuridae0603",
+              icon: ["fab", "twitter"]
+            }
+          ]
+        },
+        works: {
+          title: "Works 作品",
+          icon: "briefcase",
+          items: [
+            {
+              name: "Telegram osu! Bot",
+              description: "在 Telegram 內取得 osu! 帳號/圖譜資訊",
+              href: "https://github.com/sciuridae0603/telegram_osu_bot",
+              image: "assets/works/osubot.png",
+              width: "60vw"
+            },
+            {
+              name: "2018公投地圖",
+              description: "點擊地區及公投顯示出公投數據",
+              href: "https://github.com/sciuridae0603/referendum2018",
+              image: "assets/works/referendum2018.png",
+              width: "60vw"
+            },
+            {
+              name: "計數器",
+              description: "利用 Vue.js 製作出的簡易計數器",
+              href: "https://github.com/R20tw/counter",
+              image: "assets/works/counter.png",
+              width: "60vw"
+            },
+            {
+              name: "個人網站",
+              description: "就是你現在在看的",
+              href: "https://github.com/sciuridae0603/sciuridae.me",
+              image: "assets/works/web.png",
+              width: "60vw"
+            },
+            {
+              name: "OKTW Network 網站",
+              description: "利用 Jekyll 製作的網站",
+              href: "https://github.com/OKTW-Network/mc.oktw.one",
+              image: "assets/works/mcoktw.png",
+              width: "60vw"
+            },
+            {
+              name: "OKTW Live 網站",
+              description: "觀看直播、紀錄，附帶彈幕、即時人數",
+              href: "https://github.com/OKTW-Network/Live",
+              image: "assets/works/liveoktw.png",
+              width: "60vw"
+            },
+            {
+              name: "OKTW Live 後端",
+              description: "提供前端 Websocket 接發收彈幕、即時人數",
+              href: "https://github.com/OKTW-Network/Liver",
+              image: "assets/works/liveroktw.png",
+              width: "60vw"
+            },
+            {
+              name: "維持 Telegram 帳戶工具",
+              description: "讓您方便的保留 Account Session",
+              href: "https://github.com/sciuridae0603/TelegramAccountKeeper",
+              image: "assets/works/tgkeeper.jpg",
+              width: "60vw"
+            }
+          ]
+        },
+        skills: {
+          title: "Skills 技能",
+          icon: "flask",
+          items: [
+            {
+              name: "Python",
+              icon: ["fab", "python"]
+            },
+            {
+              name: "PHP",
+              icon: ["fab", "php"]
+            },
+            {
+              name: "HTML5",
+              icon: ["fab", "html5"]
+            },
+            {
+              name: "Javascript",
+              icon: ["fab", "js"]
+            },
+            {
+              name: "Laravel",
+              icon: ["fab", "laravel"]
+            },
+            {
+              name: "Vue",
+              icon: ["fab", "vuejs"]
+            },
+            {
+              name: "Repair",
+              icon: ["fas", "wrench"]
+            },
+            {
+              name: "Server Management",
+              icon: ["fas", "server"]
+            }
+          ]
+        }
       }
     };
   }
