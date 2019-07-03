@@ -210,6 +210,6 @@ a {
   display: flex;
   justify-content: center;
 
-  padding-top: 50px;
+  padding-top: 100px;
 }
 </style>

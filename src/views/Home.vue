@@ -38,7 +38,7 @@ export default {
 #description {
   color: white;
   font-size: 16px;
-  margin-bottom: 10em;
+  margin-bottom: 15em;
 }
 #avatar {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
