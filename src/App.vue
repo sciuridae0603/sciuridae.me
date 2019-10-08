@@ -6,6 +6,7 @@
         <router-link to="/">Sciuridae Li</router-link>
       </div>
       <div id="nav-right">
+        <a href="https://blog.sciuridae.me">Blog</a>&nbsp;&nbsp;
         <router-link to="/works">Works</router-link>&nbsp;&nbsp;
         <router-link to="/contact">Contact</router-link>
       </div>
