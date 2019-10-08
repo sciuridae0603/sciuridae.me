@@ -5,7 +5,7 @@
       <div id="avatarBorder" />
     </div>
     <div id="name">Sciuridae Li</div>
-    <div id="description">只是一個普通人，常常玩弄軟體及硬體</div>
+    <div id="description">只是一個普通人，常常玩弄軟體及硬體還有騎車</div>
 
     <Group v-bind:group="data.skills" />
   </div>
