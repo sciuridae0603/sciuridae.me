@@ -5,7 +5,7 @@
       <div id="avatarBorder" />
     </div>
     <div id="name">Sciuridae Li</div>
-    <div id="description">只是一個普通人，常常玩弄軟體及硬體還有騎車</div>
+    <div id="description">只是一個普通人，常常玩弄軟體及硬體還有<span v-on:click="emitClick('bike')" >騎車</span></div>
 
     <Group v-bind:group="data.skills" />
   </div>
@@ -21,6 +21,11 @@ export default {
   },
   components: {
     Group
+  },
+  methods: {
+    emitClick(name){
+      this.$emit("click",name);
+    }
   }
 };
 </script>

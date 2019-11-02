@@ -17,6 +17,12 @@ export default new Router({
                 import ('./views/Works.vue')
         },
         {
+            path: '/bike',
+            name: 'bike',
+            component: () =>
+                import ('./views/Bike.vue')
+        },
+        {
             path: '/contact',
             name: 'contact',
             component: () =>

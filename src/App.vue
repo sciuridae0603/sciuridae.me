@@ -1,26 +1,108 @@
 <template>
   <div id="app">
-    <div id="background" />
+    <Background v-bind:url="data.background" />
     <div id="nav">
       <div id="nav-left">
         <router-link to="/">Sciuridae Li</router-link>
       </div>
       <div id="nav-right">
         <a href="https://blog.sciuridae.me">Blog</a>&nbsp;&nbsp;
+        <router-link v-if="data.bike.show" to="/bike">Bike</router-link>&nbsp;&nbsp;
         <router-link to="/works">Works</router-link>&nbsp;&nbsp;
         <router-link to="/contact">Contact</router-link>
       </div>
     </div>
     <div id="content">
-      <router-view v-bind:data="data" />
+      <router-view v-on:click="clickListener" v-bind:data="data" />
     </div>
   </div>
 </template>
 <script>
+import Background from "@/components/Background.vue"
+
 export default {
+  components: {
+    Background
+  },
+  methods:{
+    clickListener(name){
+      if (name == "bike"){
+        this.data.bike.clickCount++;
+        if(this.data.bike.clickCount > 2){
+          this.data.bike.show = true;
+          this.$router.push("/bike");
+        }
+      }
+    }
+  },
   data() {
     return {
       data: {
+        bike : {
+          show : false,
+          clickCount : 0,
+          bike : {
+            "title" : "我ㄉ車車 My Bike",
+            "icon" : "motorcycle",
+            "items" : [
+              {
+                name: "SUZUKI GSX-R150 2019",
+                description: "\\車車/",
+                image: "assets/bike/bike-r150.jpg",
+                width: "60vw"
+                }
+            ]
+          },
+          equipment : {
+            "title" : "我ㄉ裝備 My Equipment",
+            "icon" : "tshirt",
+            "items" : [
+                {
+                name: "HJC CL17 Striker Mc1h",
+                description: "",
+                icon: "hard-hat",
+                width: "60vw"
+                },
+                {
+                name: "Alpinestar Axel Air Jacket Black/Red",
+                description: "",
+                icon: "tshirt",
+                width: "60vw"
+                },
+                {
+                name: "Alpinestar	Stricker Air Pants Black/Red",
+                description: "",
+                icon: "pants",
+                width: "60vw"
+                },
+                {
+                name: "Alpinestars SP Air Black/White",
+                description: "",
+                icon: "mitten",
+                width: "60vw"
+                },
+                {
+                name: "AUGI AR1",
+                description: "",
+                icon: "shoe-prints",
+                width: "60vw"
+                },
+                {
+                name: "SJCAM SJ8 Pro",
+                description: "",
+                icon: "video",
+                width: "60vw"
+                },
+                {
+                name: "GoPro Hero 5",
+                description: "",
+                icon: "video",
+                width: "60vw"
+                }
+
+            ]
+          }
+        },
         contact: {
           title: "Contact 聯絡我",
           icon: "address-book",
@@ -172,23 +254,6 @@ body {
 a {
   color: unset;
   text-decoration: none;
-}
-
-#background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-
-  transform: scale(1.5);
-
-  z-index: -100;
-
-  background: url("assets/background.png");
-  background-size: cover;
-  background-position: fixed;
-  background-position-y: -100px;
 }
 
 #nav {
