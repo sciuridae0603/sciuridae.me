@@ -60,31 +60,32 @@ export default {
                 {
                 name: "HJC CL17 Striker Mc1h",
                 description: "",
-                icon: "hard-hat",
+                image: "assets/bike/helmet.png",
                 width: "60vw"
                 },
                 {
-                name: "Alpinestar Axel Air Jacket Black/Red",
+                name: "Alpinestar	Stricker Air Pants / Alpinestar Axel Air Jacket",
                 description: "",
-                icon: "tshirt",
-                width: "60vw"
-                },
-                {
-                name: "Alpinestar	Stricker Air Pants Black/Red",
-                description: "",
+                image: "assets/bike/alpinstar-textile.jpg",
                 icon: "pants",
                 width: "60vw"
                 },
                 {
-                name: "Alpinestars SP Air Black/White",
+                name: "Revit Triton Suit / Revit Quantum Suit",
                 description: "",
-                icon: "mitten",
+                image: "assets/bike/suits.jpg",
                 width: "60vw"
                 },
                 {
-                name: "AUGI AR1",
+                name: "Alpinestars GP Plus Black/White",
                 description: "",
-                icon: "shoe-prints",
+                image: "assets/bike/gloves.jpg",
+                width: "60vw"
+                },
+                {
+                name: "Alpinestars Supertech R",
+                description: "",
+                image: "assets/bike/boots.webp",
                 width: "60vw"
                 },
                 {
