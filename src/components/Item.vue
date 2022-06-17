@@ -28,31 +28,33 @@ export default {
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 0.4em;
+  padding: 1em 1.2rem;
   margin: 0.3em;
 
   border: 2px solid white;
   border-radius: 3px;
 
   transition: 0.2s;
+
+  background:white;
 }
 .Item:hover {
-  border: 2px solid #2ab7ca;
+  border: 2px solid #646E78;
 }
 .ItemImage {
   width: 100%;
 }
 .ItemIcon {
-  color: white;
-  margin-top: 0.1em;
+  color: #646e78;
   font-size: 5em;
 }
 .ItemName {
-  color: white;
-  font-size: 1.5em;
+  color: #646e78;
+  font-size: 1.6rem;
+  margin-top:8px;
 }
 .ItemDescription {
-  color: white;
+  color: #646e78;
   font-size: 1em;
 }
 </style>

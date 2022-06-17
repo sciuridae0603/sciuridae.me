@@ -1,5 +1,5 @@
 <template>
-  <div class="Home">
+  <div class="home">
     <div id="avatar">
       <img id="avatarImg" src="//gravatar.com/avatar/60ce6b00bae88e0ff15c9480a9ce92f5?s=500" />
       <div id="avatarBorder" />
@@ -30,20 +30,21 @@ export default {
 };
 </script>
 <style>
-.Home {
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #name {
-  margin-top: 10px;
+  margin-top: 16px;
   color: white;
   font-size: 6vh;
 }
 #description {
   color: white;
   font-size: 16px;
-  margin-bottom: 15em;
+  margin-top: 12px;
+  margin-bottom: 16em;
 }
 #avatar {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);

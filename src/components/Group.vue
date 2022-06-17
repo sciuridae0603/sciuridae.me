@@ -33,16 +33,17 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.GroupTitle {
-  font-size: 2em;
-  color: white;
+  margin-bottom: 1rem;
 }
 .GroupIcon {
   color: white;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
   font-size: 4em;
+}
+.GroupTitle {
+  font-size: 2em;
+  color: white;
 }
 @media only screen and (min-width: 720px) {
   .GroupContent {
